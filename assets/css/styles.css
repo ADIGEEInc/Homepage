@@ -1,0 +1,27 @@
+section{
+}
+body{
+}
+#bgpicture{
+    background-color: #3B6980;
+}
+.wrapper{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 1600px;
+}
+.text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    padding-top: 60px;
+  }
