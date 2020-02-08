@@ -36,16 +36,16 @@ body{
         width: 800px;
     }
   }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 600px){
     .wrapper{
         position: relative;
         margin: auto;
         text-align: center;
-        width: 500px;
+        width: 350px;
     }
     .text-block {
         position: absolute;
-        top: 50%;
+        top: 240px;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
@@ -55,7 +55,11 @@ body{
         width: 300px;
         height: 300px;
         border-radius: 25px;
-        padding-top: 90px;
+        padding-top: 50px;
       }
+      #bgpicture{
+        background-color: #3B6980;
+        height: 400px;
+    }
 }
 
