@@ -26,3 +26,35 @@ body{
     border-radius: 25px;
     padding-top: 60px;
   }
+
+  @media screen and (max-width: 1200px){
+    .wrapper{
+        position: relative;
+        margin: auto;
+        text-align: center;
+        width: 800px;
+    }
+  }
+  @media screen and (max-width: 800px){
+    .wrapper{
+        position: relative;
+        margin: auto;
+        text-align: center;
+        width: 500px;
+    }
+    .text-block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 25px;
+        padding-top: 90px;
+      }
+}
+
