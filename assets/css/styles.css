@@ -1,17 +1,41 @@
 .full{
     width: 100%;
 }
+h1, h2, h3, h4, h5{
+    color: #30536f;
+}
+p{
+    color: #54577c
+}
 body{
     background-image: url('../images/so-white.png');
+    font-family: 'Roboto', ;
 }
 #bgpicture{
     background-color: #3B6980;
+}
+.adigeeBlue{
+    color: #2f85c3;
+}
+.backgroundcolor{
+    background-color: #cccccc;
+}
+.hostimg1{
+    width:459px;
+    height:337px;
+}
+.hostimg2{
+    width:430px;
+    height:241px;
 }
 .wrapper{
     position: relative;
     margin: auto;
     text-align: center;
-    width: 1600px;
+    width: 1200px;
+}
+#basicinfo{
+    padding-left: 100px;
 }
 .text-block {
     position: absolute;
@@ -22,11 +46,52 @@ body{
     color: black;
     padding-left: 20px;
     padding-right: 20px;
-    width: 500px;
+    width: 500px ;
     height: 300px;
     border-radius: 25px;
     padding-top: 60px;
+
   }
+  #curentlocations{
+      padding-top: 50px;
+      margin-top: 30px;
+      padding-bottom: 20px;
+  }
+  .video{
+    width: 500px; 
+    height: 315px;
+  }
+
+  #btn{
+    background-color: #602d4c;
+    height: 48px;
+    padding: 12px 28px;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#btn2{
+    background-color: #602d4c;
+    height: 48px;
+    padding: 12px 28px;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#btn:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.25); 
+}
 
   @media screen and (max-width: 1200px){
     .wrapper{
@@ -60,6 +125,17 @@ body{
       #bgpicture{
         background-color: #3B6980;
         height: 400px;
+    }
+    .hostimg1, .hostimg2 {
+        width: 90%;
+        height: 90%;
+    }
+    .video{
+        width: 95%; 
+        height: 95%;
+      }
+      #basicinfo{
+        padding-left: 0px;
     }
 }
 

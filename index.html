@@ -14,13 +14,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -34,17 +34,22 @@
                 <a class="nav-link" href="team.html">Meet the Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+                <a class="nav-link" href="mailto:service@adigee.com?subject=Contact Adigee">Contact us</a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <button onclick="window.location.href = 'https://app.adigee.com';" style="width: 100px" type="button" class="btn btn-primary my-2 form-inline">Login</button>
+          </span>
         </div>
       </nav>
       <div id="bgpicture">
         <section class="wrapper" >
             <img src="assets/images/flat-urban-city-skyscraper-vector-amy-edit-all-blank.jpg" class="img-fluid" alt="Responsive image">
             <div class="text-block">
-                <h1>ADIGEE</h1>
-                <h2>Connecting Central Florida Local Businesses</h2>
+                <h1 class="adigeeBlue">MANAGE YOUR ADS!</h1>
+                <p>View our platform for free when you sign up!</p>
+            
+                <button id="btn" onclick="window.location.href = 'https://app.adigee.com';" style="width: 200px" type="button">SIGN UP FREE</button>
             </div>
         </section>
       </div>
@@ -80,7 +85,7 @@
         </section>
       </div>
       <section style="padding-top: 30px;padding-bottom: 30px;" class="wrapper">
-        <h1>Current host!</h1>
+        <h1>Current Host!</h1>
         <img src="assets/images/logos/breakfast club logo transparent 275x150.png">
         <img src="assets/images/logos/cavallari logo white 275x150.jpg">
         <img src="assets/images/logos/Galva logo transparent 275x150.png">
@@ -95,11 +100,27 @@
           <!-- Footer -->
           <div class="bg-info relative-bottom">
             <footer class="page-footer font-small bg-dark pt-4 text-secondary">
-                <div class="container-fluid text-center text-md-left">
+                <div class="container-fluid text-center text-md-left wrapper">
                 <div class="row">
                     <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item active">
+                            <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="host.html">Host</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="advertiser.html">Advertiser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="team.html">Meet the Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none pb-3">
                     <div class="col-md-3 mb-md-0 mb-3">
@@ -119,9 +140,7 @@
                 </div>
                 </div>
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-                </div>
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: ADIGEE, Inc</div>
             </footer>
-        </div>    
+        </div>     
 </html>

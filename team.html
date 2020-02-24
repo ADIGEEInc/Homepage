@@ -8,18 +8,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Team</title>
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link mr-auto" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="host.html">Host</a>
@@ -31,20 +34,86 @@
                 <a class="nav-link" href="team.html">Meet the Team <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
+              <a class="nav-link" href="mailto:service@adigee.com?subject=Contact Adigee">Contact us</a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <button onclick="window.location.href = 'https://app.adigee.com';" style="width: 100px" type="button" class="btn btn-primary my-2 form-inline">Login</button>
+          </span>
         </div>
       </nav>
+      <div class="wrapper">
+        <h1>Our Story</h1>
+      </div>
+      <div class="wrapper">
+        <h1>Meet the team!</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="assets/images/David.jpg" height="200" width="203">
+            <h5>David Chau - Founder</h5>
+          </div>
+          <div class="col-md-6">
+            <p style="text-align: left;"> David Chau has been entrepreneurial since an unusually early age: from working in his father's Philadelphia convenience store at age 7, 
+              to mentoring and tutoring other students in grade school, through four years at Lockheed Martin in Florida starting at age 16, and into a subsequent 
+              career path in corporate IT. Today, along with his full-time IT position, he also manages a small property management operation as well as running 
+              ADIGEE: a recent start-up endeavor that was inspired by observing his father's struggles with the challenges of small business ownership. 
+              When David isn't working or looking for solutions to everyday problems, he can be found rock climbing,swing dancing, or backpacking through various national parks. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="assets/images/Amy.jpg" height="200" width="203">
+            <h5>Amy Davenport - Cofounder</h5>
+          </div>
+          <div class="col-md-6">
+            <p style="text-align: left;">Amy Davenport has been a Central Florida resident for 20+ years, working for the majority of that time in the Employee Benefits industry, 
+              assisting businesses ranging from 5 to 500 employees.  In recent years she stepped back from the corporate environment and 
+              ventured into simple small business ownership - a beauty salon- which then became the first host location of the prototype ADIGEE board. 
+              Recognizing its potential, she carved out a position with the company,complementing the already-promising ADIGEE team with her experience in sales, 
+              presentations, administration and networking.  Some of Amy's personal endeavors reflect similar social themes:  she is an avid swing dancer, 
+              as well as a jazz singer, musician and occasional event planner.  
+              However,she can occasionally be found in less-inhabited areas, honing survival skills and enjoying the outdoors.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="assets/images/Xavier.jpg" height="200" width="203">
+            <h5>Xavier - Media Director</h5>
+          </div>
+          <div class="col-md-6">
+            <p style="text-align: left;">Resident Media Director, Xavier LeBlanc, has over 14 years of experience within the media industry in a variety of 
+              roles and platforms. This includes broadcast news production with CBS and Telemundo, 
+              writing copy and covering major entertainment events throughout the US for digital publications,and heading marketing department projects for corporate employers. 
+              He has also worked on major feature film productions for studios such as Warner Bros, Disney and 20th Century Fox.</p>
+          </div>
+        </div>
+      </div>
+
 </body>
           <!-- Footer -->
-          <div class="bg-info relative-bottom container-fluid">
+          <div class="bg-info relative-bottom">
             <footer class="page-footer font-small bg-dark pt-4 text-secondary">
                 <div class="container-fluid text-center text-md-left wrapper">
                 <div class="row">
                     <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item active">
+                            <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="host.html">Host</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="advertiser.html">Advertiser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="team.html">Meet the Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none pb-3">
                     <div class="col-md-3 mb-md-0 mb-3">
@@ -64,9 +133,7 @@
                 </div>
                 </div>
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-                </div>
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: ADIGEE, Inc</div>
             </footer>
-        </div>     
+        </div>       
 </html>

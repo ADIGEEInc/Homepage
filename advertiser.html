@@ -7,16 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Advertiser</title>
 </head>
-<body>
+<body >
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-        <a class="navbar-brand" href="#"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -30,11 +33,60 @@
                 <a class="nav-link" href="team.html">Meet the Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
+              <a class="nav-link" href="mailto:service@adigee.com?subject=Contact Adigee">Contact us</a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <button onclick="window.location.href = 'https://app.adigee.com';" style="width: 100px" type="button" class="btn btn-primary my-2 form-inline">Login</button>
+          </span>
         </div>
       </nav>
+      <div id="advertiserinfo" class="wrapper">
+          <div class="row">
+            <div class="col-md-6">
+              <iframe class="video" src="https://www.youtube.com/embed/3393Z0KtqFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+              <h1>Basic Info</h1>
+              <ul id="basicinfo" style="text-align: left;">
+                <li>$14.99/month to get started</li>
+                <li>Month-to-month contracts, no lengthy commitments</li>
+                <li>Send us a static image that is 1920 x 1080 and 2MB max file size<br></li>
+                <li>Once approved by our Hosts, your ad starts streaming<br></li>
+              </ul>
+              <button id="btn2" onclick="window.location.href = 'https://app.adigee.com';" style="width: 200px" type="button">REGISTER NOW</button>
+            </div>
+          </div>
+        </br>
+          <div class="row">
+                <div class="col-md-6">
+                  <h1 class="h2">Easy to get started!</h1>
+                  <p>Register your account then upload your AD!<br>‍</p>
+                  <h1 class="h2">Advertiser Dashboard</h1>
+                  <p>Our dashboard allows use to upload and push your ad in minutes!</p>
+                </div>
+                <div class="col-md-6">
+                  <img class="video" src="assets/images/dashboard.PNG" alt="">                
+                </div>
+          </div>
+      </div>
+      <div class="backgroundcolor">
+        <div id="curentlocations" class="wrapper backgroundcolor">
+          <div>
+            <h2 class="h2">Current Locations</h2>
+            <div class="rich-text-block w-richtext" style="text-align: left;">
+              <p> <a href="https://www.facebook.com/TuskawillaBreakfastClub/"><strong>Breakfast Club of Tuskawilla</strong></a><br>5965 Red Bug Lake Rd #137<br>Oviedo, FL 32765</p>
+              <p><a href="http://places.singleplatform.com/gregorys-hair-salon/menu?ref=google"><strong>Gregory’s Hair Salon</strong></a><br>2234 Winter Woods Blvd #1008<br>Winter Park, FL 32792</p>
+              <p><a href="http://orlandoswingdance.com/"><strong>Orlando Swing Dance</strong></a><br>1271 FL-436<br>Casselberry, FL 32707</p>
+              <p><a href="https://www.facebook.com/Awildagalv/"><strong>Galva Salon<br>‍</strong></a>3030 N Goldenrod Rd, <br>Orlando, FL 32807<br></p>
+              <p><a href="https://cavallarigourmet.com/"><strong>Cavallari<br></strong></a>1954 W State Rd 426, <br>Oviedo, FL 32765<br></p>
+              <p><a href="https://www.repairgeniuses.com/"><strong>Repair Genius<br></strong></a>2258 Aloma Ave, <br>Winter Park, FL 32792<br></p>
+              <p><a href="https://www.petrescuebyjudy.com"><strong>Pet Rescue By Judy</strong></a><strong><br></strong>401 South Laurel Ave<br>Sanford, FL 32771</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </body>
           <!-- Footer -->
           <div class="bg-info relative-bottom">
@@ -42,8 +94,24 @@
                 <div class="container-fluid text-center text-md-left wrapper">
                 <div class="row">
                     <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item active">
+                            <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="host.html">Host</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="advertiser.html">Advertiser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="team.html">Meet the Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none pb-3">
                     <div class="col-md-3 mb-md-0 mb-3">
@@ -63,9 +131,7 @@
                 </div>
                 </div>
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-                </div>
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: ADIGEE, Inc</div>
             </footer>
-        </div>     
+        </div>         
 </html>

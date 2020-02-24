@@ -7,16 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Host</title>
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/ADIGEE-logo-blue-on-transp-w-SM-from-png.png " style="width:170px;height:53px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -30,20 +33,24 @@
                 <a class="nav-link" href="team.html">Meet the Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
+              <a class="nav-link" href="mailto:service@adigee.com?subject=Contact Adigee">Contact us</a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <button onclick="window.location.href = 'https://app.adigee.com';" style="width: 100px" type="button" class="btn btn-primary my-2 form-inline">Login</button>
+          </span>
         </div>
       </nav>
       <section class="wrapper">
-        <h1>Put your screen to work!</h1>
+        <h1><a href="mailto:service@adigee.com?subject=Contact Adigee">Contact us</a> to learn how to put your screen to work!</h1>
+      </br>
         <div class="row">
           <div class="col-md-6">
             <h2>Get paid to help your neighbor!</h2>
             <p>By joining our network as a host you can use any <br/>screen with an HDMI to generate passive income.</p>
           </div>
           <div class="col-md-6">
-            <img src="assets/images/IMG_20190730_081319.jpg" style="width:459px;height:337px;">
+            <img class="hostimg1" src="assets/images/IMG_20190730_081319.jpg">
           </div>
         </div>
         <div class="row">
@@ -52,7 +59,7 @@
             <p>Just plug our device into your screen, <br/>give it power and connect it to wifi. <br/>Less than 15 minutes installation</p>
           </div>
           <div class="col-md-6">
-            <img src="assets/images/easyinstall.PNG" style="width:430px;height:241px;">
+            <img class="hostimg2" src="assets/images/easyinstall.PNG">
           </div>
         </div>
         <div class="row">
@@ -69,7 +76,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/f5i3UTMHX6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video" src="https://www.youtube.com/embed/f5i3UTMHX6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         </div>
       </section>
@@ -80,8 +87,24 @@
                 <div class="container-fluid text-center text-md-left wrapper">
                 <div class="row">
                     <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item active">
+                            <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="host.html">Host</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="advertiser.html">Advertiser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="team.html">Meet the Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none pb-3">
                     <div class="col-md-3 mb-md-0 mb-3">
@@ -101,9 +124,7 @@
                 </div>
                 </div>
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-                </div>
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: ADIGEE, Inc</div>
             </footer>
-        </div>     
+        </div> 
 </html>
