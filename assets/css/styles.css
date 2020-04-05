@@ -7,9 +7,17 @@ h1, h2, h3, h4, h5{
 p{
     color: #54577c
 }
+.center{
+  text-align: center;
+}
 body{
-    background-image: url('../images/so-white.png');
+    /* background-image: url('../images/so-white.png'); */
     font-family: 'Roboto', ;
+}
+
+.background{
+  background-image: url('../images/so-white.png');
+  background-color: white;
 }
 #bgpicture{
     background-color: #3B6980;
@@ -31,7 +39,6 @@ body{
 .wrapper{
     position: relative;
     margin: auto;
-    text-align: center;
     width: 1200px;
 }
 #basicinfo{
@@ -42,6 +49,7 @@ body{
     padding-left: 20px;
     height: 337px;
     width: 600px;
+    position: relative;
   }
   #curentlocations{
       padding-top: 50px;
@@ -133,6 +141,7 @@ body{
 #frontPageFirstSection{
 margin-top: 40px;
 margin-bottom: 40px;
+z-index: 1;
 }
 
 .nav-link{
@@ -144,7 +153,22 @@ margin-bottom: 40px;
     color: white;
 }
 
-/* */
+.picfixed{
+  position: absolute;
+  height: 337px;
+  width: 600px;
+  float: left;
+}
+#picslide{
+  height: 337px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+
+
+/* Animations */
   .animate-reveal {
     opacity: 0;
     -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
@@ -241,3 +265,55 @@ margin-bottom: 40px;
               transform: translateY(0);
     }
   }
+
+
+
+.slidea {
+  bottom: -900px;
+  -webkit-animation: slidea 8s infinite;
+  -webkit-animation-delay: 0s;
+  animation: slidea 8s infinite;
+  animation-delay: 0s;
+  z-index: -1;
+}
+
+.slideb {
+  bottom: -900px;
+  -webkit-animation: slideb 8s infinite;
+  -webkit-animation-delay: 0s;
+  animation: slideb 8s infinite;
+  animation-delay: 0s;
+  z-index: -2;
+}
+
+.slidec {
+  bottom: -900px;
+  -webkit-animation: slidec 8s infinite;
+  -webkit-animation-delay: 0s;
+  animation: slidec 8s infinite;
+  animation-delay: 0s;
+  z-index: -3;
+}
+
+@keyframes slidea {
+  0% { bottom: -900px; }
+  45% {bottom: -900px; }
+  60% {bottom: 0px; }
+  85% { bottom: 0px; }
+  100% { bottom: 400px; }
+}
+
+@keyframes slideb {
+  0% { bottom: -900px; }
+  20% { bottom: -900px; }
+  40% {bottom: 0px; }
+  85% { bottom: 0px; }
+  100% { bottom: 400px; }
+}
+
+@keyframes slidec {
+  0% { bottom: -900px; }
+  20% { bottom: 0px; }
+  85% { bottom: 0px; }
+  100% { bottom: 400px; }
+}
