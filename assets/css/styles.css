@@ -50,6 +50,7 @@ body{
     height: 337px;
     width: 600px;
     position: relative;
+    background-color: white;
   }
   #curentlocations{
       padding-top: 50px;
@@ -92,51 +93,6 @@ body{
     transform: scale(1.05); 
 }
 
-  @media screen and (max-width: 1200px){
-    .wrapper{
-        position: relative;
-        margin: auto;
-        text-align: center;
-        width: 800px;
-    }
-  }
-  @media screen and (max-width: 600px){
-    .wrapper{
-        position: relative;
-        margin: auto;
-        text-align: center;
-        width: 340px;
-    }
-    .text-block {
-        position: absolute;
-        top: 200px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        color: black;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 300px;
-        height: 300px;
-        border-radius: 25px;
-        padding-top: 40px;
-      }
-      #bgpicture{
-        background-color: #3B6980;
-        height: 400px;
-    }
-    .hostimg1, .hostimg2 {
-        width: 90%;
-        height: 90%;
-    }
-    .video{
-        width: 95%; 
-        height: 95%;
-      }
-      #basicinfo{
-        padding-left: 0px;
-    }
-}
 
 #frontPageFirstSection{
 margin-top: 40px;
@@ -154,12 +110,14 @@ z-index: 1;
 }
 
 .picfixed{
+  right: 0;
   position: absolute;
-  height: 337px;
+  height: 525px;
   width: 600px;
   float: left;
 }
 #picslide{
+  display: none;
   height: 337px;
   width: 600px;
   float: left;
@@ -270,50 +228,217 @@ z-index: 1;
 
 .slidea {
   bottom: -900px;
-  -webkit-animation: slidea 8s infinite;
+  -webkit-animation: slidea 10s infinite;
   -webkit-animation-delay: 0s;
-  animation: slidea 8s infinite;
+  animation: slidea 10s infinite;
   animation-delay: 0s;
   z-index: -1;
 }
 
 .slideb {
   bottom: -900px;
-  -webkit-animation: slideb 8s infinite;
+  -webkit-animation: slideb 10s infinite;
   -webkit-animation-delay: 0s;
-  animation: slideb 8s infinite;
+  animation: slideb 10s infinite;
   animation-delay: 0s;
   z-index: -2;
 }
 
 .slidec {
   bottom: -900px;
-  -webkit-animation: slidec 8s infinite;
+  -webkit-animation: slidec 10s infinite;
   -webkit-animation-delay: 0s;
-  animation: slidec 8s infinite;
+  animation: slidec 10s infinite;
   animation-delay: 0s;
   z-index: -3;
 }
 
+.slided {
+  bottom: -900px;
+  -webkit-animation: slided 10s infinite;
+  -webkit-animation-delay: 0s;
+  animation: slided 10s infinite;
+  animation-delay: 0s;
+  z-index: -4;
+}
+
 @keyframes slidea {
   0% { bottom: -900px; }
-  45% {bottom: -900px; }
-  60% {bottom: 0px; }
-  85% { bottom: 0px; }
+  60% {bottom: -900px; }
+  70% { bottom: -150px; }
+  85% { bottom: -150px; }
   100% { bottom: 400px; }
 }
 
 @keyframes slideb {
   0% { bottom: -900px; }
-  20% { bottom: -900px; }
-  40% {bottom: 0px; }
-  85% { bottom: 0px; }
+  40% { bottom: -900px; }
+  50% { bottom: -150px; }
+  85% { bottom: -150px; }
   100% { bottom: 400px; }
 }
 
 @keyframes slidec {
   0% { bottom: -900px; }
-  20% { bottom: 0px; }
-  85% { bottom: 0px; }
+  20% { bottom: -900px; }
+  30% { bottom: -150px; }
+  85% { bottom: -150px; }
   100% { bottom: 400px; }
+}
+
+@keyframes slided {
+  0% { bottom: -900px; }
+  10% { bottom: -150px; }
+  85% { bottom: -150px; }
+  100% { bottom: 400px; }
+}
+
+
+@media screen and (max-width: 1200px){
+  .wrapper{
+      position: relative;
+      margin: auto;
+      text-align: center;
+      width: 800px;
+  }
+
+  #frontPageTextBlock {
+    padding-top: 50px;
+    padding-left: 20px;
+    height: 337px;
+    width: 400px;
+    position: relative;
+    background-color: white;
+  }
+
+  .picfixed{
+    right: 0;
+    position: absolute;
+    height: 370px;
+    width: 400px;
+    float: left;
+  }
+
+  @keyframes slidea {
+    0% { bottom: -460px; }
+    60% { bottom: -460px; }
+    70% { bottom: -70px; }
+    90% { bottom: -70px; }
+    100% { bottom: 400px; }
+  }
+  
+  @keyframes slideb {
+    0% { bottom: -460px; }
+    40% { bottom: -460px; }
+    50% { bottom: -70px; }
+    90% { bottom: -70px; }
+    100% { bottom: 400px; }
+  }
+  
+  @keyframes slidec {
+    0% { bottom: -460px; }
+    20% { bottom: -460px; }
+    30% { bottom: -70px; }
+    90% { bottom: -70px; }
+    100% { bottom: 400px; }
+  }
+  
+  @keyframes slided {
+    0% { bottom: -460px; }
+    10% { bottom: -70px; }
+    90% { bottom: -70px; }
+    100% { bottom: 400px; }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .wrapper{
+      position: relative;
+      margin: auto;
+      text-align: center;
+      width: 340px;
+  }
+  #frontPageTextBlock {
+    padding-top: 50px;
+    padding-left: 20px;
+    height: 337px;
+    width: 600px;
+    position: relative;
+    background-color: white;
+    margin-top: 90px;
+  }
+  .text-block {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 300px;
+      height: 300px;
+      border-radius: 25px;
+      padding-top: 40px;
+    }
+    #bgpicture{
+      background-color: #3B6980;
+      height: 400px;
+  }
+  .hostimg1, .hostimg2 {
+      width: 90%;
+      height: 90%;
+  }
+  .video{
+      width: 95%; 
+      height: 95%;
+    }
+    #basicinfo{
+      padding-left: 0px;
+  }
+  .picfixed{
+    right: 0;
+    position: absolute;
+    height: 370px;
+    width: 337px;
+    float: left;
+  }
+  #picslide{
+    display: block;
+    height: 200px;
+    width: 600px;
+    float: left;
+    position: relative;
+  }
+
+  @keyframes slidea {
+    0% { bottom: -20px; }
+    60% { bottom: -20px; }
+    70% { bottom: 280px; }
+    90% { bottom: 280px; }
+    100% { bottom: 1000px; }
+  }
+  
+  @keyframes slideb {
+    0% {bottom: -20px; }
+    40% { bottom: -20px; }
+    50% { bottom: 280px; }
+    90% { bottom: 280px; }
+    100% { bottom: 1000px; }
+  }
+  
+  @keyframes slidec {
+    0% { bottom: -20px; }
+    20% { bottom: -20px; }
+    30% { bottom: 280px; }
+    90% { bottom: 280px; }
+    100% { bottom: 1000px; }
+  }
+  
+  @keyframes slided {
+    0% { bottom: -20px; }
+    10% { bottom: 280px; }
+    90% { bottom: 280px; }
+    100% { bottom: 1000px; }
+  }
 }
